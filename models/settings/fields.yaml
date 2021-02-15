@@ -1,0 +1,15 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    text:
+        label: Texto
+        type: richeditor
+
+    btn_label:
+        label: Botão
+
+    css: 
+        label: CSS
+        type: textarea

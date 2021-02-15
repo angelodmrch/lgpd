@@ -1,84 +1,21 @@
-<!-- <div class="lgpd" style="display: none;"> -->
-<div class="lgpd">
+<div class="dmrch-lgpd" style="display: none;">
 	<div class="content">
-		<p>Utilizamos cookies essenciais e tecnologias semelhantes de acordo com a nossa <a href="{{ url('politica-de-privacidade') }}">Política de Privacidade</a> e <a href="{{ url('termos-de-uso') }}">Termos de Uso</a> e, ao continuar navegando, você concorda com estas condições.</p>
+		{{ __SELF__.text|raw }}
 
-		<a href="javascript:void()" onclick="accept();" class="btn">OK</a>
+		<a href="javascript:void()" onclick="accept();" class="btn">{{ __SELF__.btn_label }}</a>
 	</div>
 </div>
 
 <style>
-	.lgpd {
-		position: fixed !important;
-		padding: 20px;
-		width: 100%;
-		bottom: 0;
-		z-index: 99999;
-	}
-
-	.lgpd .content {
-		width: 100%;
-		margin: auto;
-		font-size: 13px;
-		background: rgba(0,0,0,.8);
-		color: #fff;
-		display: flex;
-		justify-content: space-around;		
-	}
-
-	.lgpd .content p {
-		display: inline-block;
-		padding: 15px 5px;
-		margin: 0;
-	}
-
-	.lgpd .content a {
-		color: #fff;
-		text-decoration: underline;
-		display: inline-block;
-	}
-
-	.lgpd .content .btn {
-		text-decoration: none;
-		background: #fff;
-		border-radius: 0;
-		color: #333;
-		font-weight: bold;
-		font-size: 16px;
-		height: 27px;
-		margin: 12px 10px;
-		padding: 0px 30px;
-		opacity: .6;
-	}
-
-	@media screen and (max-width: 991px) {
-
-		.lgpd {
-			padding: 10px;
-		}
-
-		.lgpd .content {
-			text-align: center; 
-			display: block;	
-			font-size: 12px;
-		} 
-
-		.lgpd .content p {
-			padding: 10px;
-		}
-
-		.lgpd .content .btn {
-			margin: 5px 5px 10px 5px;
-		}
-	}
+	{{ __SELF__.css }}
 </style>
 
 <script>
-	/*$(document).ready(function(){
+	$(document).ready(function(){
 		if (! getCookie('lgpd_allow')) {
-			$('.lgpd').show();	
+			$('.dmrch-lgpd').show();	
 		}
-	});*/
+	});
 
 	function setCookie(cname, cvalue, exdays) {
 	  var d = new Date();
@@ -105,6 +42,6 @@
 
 	function accept() {
 		setCookie('lgpd_allow', true, 360);
-		$('.lgpd').hide();
+		$('.dmrch-lgpd').hide();
 	}
 </script>
