@@ -18,7 +18,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'Lgpd',
             'description' => 'No description provided yet...',
-            'author'      => 'Dmrch',
+            'author'      => 'Angelo Demarchi',
             'icon'        => 'icon-leaf'
         ];
     }
