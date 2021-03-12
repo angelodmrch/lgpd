@@ -79,7 +79,7 @@ class Plugin extends PluginBase
             'settings' => [
                 'label'       => 'LGPD',
                 'description' => 'Manage LGPD settings.',
-                'category'    => 'LGPD',
+                'category'    => 'Geral',
                 'icon'        => 'icon-cog',
                 'class'       => 'Dmrch\Lgpd\Models\Settings',
                 'order'       => 500,
