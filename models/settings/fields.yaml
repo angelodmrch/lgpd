@@ -13,3 +13,7 @@ fields:
     css: 
         label: CSS
         type: textarea
+
+    politica_text: 
+        label: Política de Privacidade
+        type: richeditor

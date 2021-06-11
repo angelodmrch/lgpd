@@ -12,7 +12,7 @@
 
 <script>
 	$(document).ready(function(){
-		if (! getCookie('lgpd_allow')) {
+		if (! getCookie('{{ __SELF__.app_name|slug }}-lgpd-allow')) {
 			$('.dmrch-lgpd').show();	
 		}
 	});
@@ -41,7 +41,7 @@
 	}
 
 	function accept() {
-		setCookie('lgpd_allow', true, 360);
+		setCookie('{{ __SELF__.app_name|slug }}-lgpd-allow', true, 360);
 		$('.dmrch-lgpd').hide();
 	}
 </script>
