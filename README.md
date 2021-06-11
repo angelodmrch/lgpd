@@ -12,4 +12,7 @@ The example shows the basic component usage:
 
     {% component 'lgpd' %}
 
+
+    {{ lgpd.politica_text|raw }}
+
     ...
