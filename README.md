@@ -1,4 +1,4 @@
-# LGPD Plugin
+# LGPD Plugin for [Winter CMS](https://wintercms.com/) and [October CMS](https://octobercms.com/).
 
 The example shows the basic component usage:
 
